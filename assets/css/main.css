@@ -67,7 +67,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   
   
   clip-path: polygon(69% 12%, 100% 0, 100% 100%, 60% 91%, 85% 72%, 51% 55%, 90% 36%);
-  animation-name: root-side-body-anim;
+    animation-name: root-side-body-anim;
   animation-duration:5s;
   animation-iteration-count: infinite;
   animation-fill-mode: backwards;

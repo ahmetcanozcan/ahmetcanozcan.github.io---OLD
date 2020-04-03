@@ -27,16 +27,16 @@ SIDEBAR STYLES
 }
 .sidebar .sidebar-logo-img img{
   height: 100%;
-  border:.2rem solid wheat;
+  border:.2rem solid rgb(235, 232, 227);
   border-radius: 12px;
 }
 
 /*
   SIDERBAR CONTENT  STYLES
 */
-.sidebar-content{
+.sidebar-content{ 
   margin-top: 1rem;
-  color: wheat;
+  color: rgb(235, 232, 227);
 }
 
 .sidebar-content-header{
@@ -57,7 +57,7 @@ SIDEBAR STYLES
 }
 
 .sidebar-navbar-link{
-    color: wheat;
+    color: white;
     display: block;
     text-align: right;
     font-size: 1.2rem;
@@ -65,7 +65,7 @@ SIDEBAR STYLES
 }
 .sidebar-navbar-link a{
   padding: .4rem 1rem;
-  color: wheat;
+  color: white;
   margin: 0;
   position: relative;
   text-decoration: none;
@@ -91,7 +91,7 @@ SIDEBAR STYLES
   text-align: center;
 }
 .sidebar-socials> *{
-  color: wheat;
+  color: rgb(255, 255, 255);
   margin: 0 .4rem;
 }
 @media only screen and (max-width: 600px) {
@@ -114,11 +114,18 @@ SIDEBAR STYLES
     text-align: center;
   }
   .sidebar-navbar-link{
-    color: wheat;
+    color: white;
     display: inline-block;
     text-align: right;
     font-size: 1.2rem;
     text-decoration: none;
+}
+
+.sidebar-navbar-link a{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 15px;
+
 }
   
 }
