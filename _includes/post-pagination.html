@@ -1,0 +1,13 @@
+<div class="post-page-pagination">
+
+  {%  if page.previous %}
+  <a href="{{ page.previous.url }}" class="left">
+    <i class="fas fa-chevron-left"></i> {{page.previous.title}} </a>
+  {% endif %}
+  {%  if page.next %}
+  <a href="{{ page.next.url }}" class="right">
+    {{page.next.title}} <i class="fas fa-chevron-right"></i>
+  </a>
+  {% endif %}
+  <br>
+</div>

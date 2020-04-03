@@ -1,0 +1,124 @@
+/*
+SIDEBAR STYLES
+*/
+.sidebar{
+  /*
+  background: linear-gradient( #222831,#393e46);
+  */
+
+
+  background-color: #222831;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23272c35' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%232b3139' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%2330353e' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23343a42' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23393e46' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+
+  
+  position: relative;
+  height: 100vh;
+  padding-top: 7rem;
+  text-align: center;
+  box-shadow: 1px 1px 50px -5px black;
+}
+
+
+.sidebar .sidebar-logo-img{
+  display: inline-block;
+  width: 40%;
+}
+.sidebar .sidebar-logo-img img{
+  height: 100%;
+  border:.2rem solid wheat;
+  border-radius: 12px;
+}
+
+/*
+  SIDERBAR CONTENT  STYLES
+*/
+.sidebar-content{
+  margin-top: 1rem;
+  color: wheat;
+}
+
+.sidebar-content-header{
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+.sidebar-content-body {
+  text-align: right;
+  padding: 1rem;
+}
+
+/*
+  SIDEBAR NAVBAR 
+*/
+.sidebar-navbar{
+  margin-top: 10vh;
+}
+
+.sidebar-navbar-link{
+    color: wheat;
+    display: block;
+    text-align: right;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.sidebar-navbar-link a{
+  padding: .4rem 1rem;
+  color: wheat;
+  margin: 0;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 150ms;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+
+.sidebar-navbar-link a:hover{
+  background-color: white;
+  color: black;
+}
+/*
+  SIDEBAR SOCIALS
+*/
+.sidebar-socials {
+  position: absolute;
+  bottom: 4vh;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.sidebar-socials> *{
+  color: wheat;
+  margin: 0 .4rem;
+}
+@media only screen and (max-width: 600px) {
+  .sidebar{
+    padding-top: 1rem;
+    height: auto;
+  }
+  .sidebar-content-body {
+    text-align: center;
+    padding: 1rem;
+  }
+  .sidebar-navbar{
+    margin-top: 1rem;
+  }
+  .sidebar-socials {
+    position: initial;
+    bottom: 4vh;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+  .sidebar-navbar-link{
+    color: wheat;
+    display: inline-block;
+    text-align: right;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+  
+}

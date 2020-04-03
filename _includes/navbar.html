@@ -1,0 +1,10 @@
+<nav>
+  {% for item in  site.data.navbar %}
+  <a {% if  page.url == item.link %} style="color:red" {% endif %} href="{{ item.link }}">
+    {{ item.name }}
+  </a>
+
+
+  {% endfor %}
+
+</nav>

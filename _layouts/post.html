@@ -1,0 +1,31 @@
+---
+layout : default
+---
+
+<div class="post-content">
+  <div style="float: left;" class="categories">
+    {% for category in page.categories %}
+    <a href="/index.html?search=category:{{category}}"> {{category}} </a> <span style="opacity: .4;">/</span>
+    {% endfor %}
+  </div>
+  <p class="title-date">
+    {{ page.date | date_to_long_string }}
+  </p>
+  <div class="post-content-header">
+    <p>
+      {{ page.title }}
+    </p>
+
+  </div>
+
+  <div class="post-content-body">
+
+    {{
+      content
+    }}
+
+    {% include post-pagination.html %}
+
+    {% include disqus.html %}
+  </div>
+</div>

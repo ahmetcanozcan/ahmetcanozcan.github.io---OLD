@@ -1,0 +1,66 @@
+.post-content{
+  padding: 1rem;
+  padding-top: 12vh;
+}
+.post-content * {
+  line-height: 1.4rem;
+}
+
+.post-content .categories a {
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+.post-content .categories {
+  margin-left: 1rem;
+}
+
+.post-content .title-date{
+  font-size: 1.4rem;
+  text-align: right;
+  opacity: .5;
+}
+.post-content-header{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.post-content-body{
+  padding-left: 2rem;
+}
+
+/*
+  POST PAGE PAGINATOR
+*/
+.post-page-pagination {
+  margin: 4rem 0;
+  font-size: 1.4rem;
+  opacity: .8;
+}
+.post-page-pagination i {
+  font-size: 2rem;
+  opacity: .8;
+  margin: 0 .4rem;
+  position: relative;
+  top: .3rem;
+}
+.post-page-pagination a {
+  text-decoration: none;
+}
+
+.post-page-pagination .left{
+  float: left;
+}
+.post-page-pagination .right{
+  float: right;
+}
+
+
+@media only screen and (max-width:600px) {
+  .post-page-pagination .left{
+    float: none;
+  }
+  .post-page-pagination .right{
+    float: none;
+  }
+  
+}

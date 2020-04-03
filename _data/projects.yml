@@ -1,0 +1,21 @@
+- name : Sernite
+  url  : //sernite.github.io
+  img : /assets/img/sernite-logo.png
+  desc : >
+    Sernite is a server-side scripting framework for building pretty modular web servers.
+    Unlike other frameworks, Sernite has unique components
+    such as nits and sernite-scripts and multi language scripting support 
+
+- name : Tap Tap Tabby
+  url  : https://play.google.com/store/apps/details?id=com.AhmetcanOZCAN.TapTapTabbyNew
+  img : /assets/img/taptap.png
+  desc : >
+      a hyper-casual game that focuses on timing.
+
+
+- name : Glevn
+  url  : //github.com/ahmetcanozcan/Glevn
+  img : /assets/img/githubsq.png
+  desc : >
+      Glenn is a tool that makes easier managing 
+      environment variables fors node-based applications.

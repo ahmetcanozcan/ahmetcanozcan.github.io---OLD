@@ -1,0 +1,19 @@
+<div class="post-list">
+
+  <div v-if="posts.length <= 0"
+    style="margin-top: 3rem; text-align: center; font-size: 2rem; opacity: .5;font-weight: 600;">
+    There is no post to show
+  </div>
+
+  <a v-for="post in posts" :href="[[post.url]]" class="post-list-item">
+    <h3> [[post.title]]
+      <div class="header-square"></div>
+    </h3>
+    <p v-html="post.excerpt">
+
+    </p>
+
+  </a>
+
+
+</div>

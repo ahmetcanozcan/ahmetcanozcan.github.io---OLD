@@ -1,0 +1,41 @@
+<script>
+  var app = new Vue({
+    el: '#app',
+    delimiters: ['[[', ']]'],
+    data: {
+
+      searchQuery: ""
+    },
+    created() {
+      var vars = {};
+      var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+        vars[key] = value;
+      });
+      this.searchQuery = vars['search'] || "";
+    },
+    mounted() {
+
+    },
+    computed: {
+      posts: function () {
+        if (this.searchQuery.startsWith('category:')) {
+          let category = this.searchQuery.slice(9);
+          return allPosts.filter(v => v.categories.filter(c => c.includes(category)).length > 0);
+        }
+        return allPosts.filter(v => {
+
+
+          return v.title.toLowerCase().includes(this.searchQuery.toLowerCase());
+
+        });
+      }
+    },
+    watch: {
+      searchQuery: (oldv, newv) => {
+      }
+    }
+
+  })
+
+
+</script>

@@ -1,0 +1,35 @@
+---
+layout : default
+---
+<div id="projects-root" class="root-content-body">
+  <div class="root-header">
+    Projects
+  </div>
+
+  <div class="root-content-body-container">
+    {% for project in site.data.projects %}
+
+    <a target="_blank" href="{{project.url}}" class="project-info-card">
+      <div class="project-info-card-img left-img">
+        <img src="{{project.img}}" alt="{{project.name}}" srcset="" style="width:100%">
+      </div>
+
+
+
+      <div class="project-info-card-body">
+        <div class="project-info-card-title">
+          {{project.name}}
+          <div class="header-square"></div>
+        </div>
+
+        <div class="project-info-card-content">
+          {{project.desc}}
+        </div>
+      </div>
+
+    </a>
+    {% endfor %}
+
+
+  </div>
+</div>

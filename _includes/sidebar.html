@@ -1,0 +1,36 @@
+<div class="sidebar">
+  <div class="sidebar-logo-img">
+    <img src="/assets/img/logo.png" width="100%" alt="">
+  </div>
+  <div class="sidebar-content">
+    <div class="sidebar-content-header">
+      Ahmetcan ÖZCAN
+    </div>
+    <div class="sidebar-content-body">
+      an enthusiastic and driven computer engineering student
+    </div>
+    <div class="sidebar-socials">
+      <a href="https://www.linkedin.com/in/ahmetcanozcan/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="//github.com/ahmetcanozcan">
+        <i class="fab fa-github-square"></i>
+      </a>
+      <a href="mailto:ahmetcanozcan7@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+    </div>
+    <div class="sidebar-navbar">
+      {% for item in site.data.navbar %}
+      <div class="sidebar-navbar-link">
+        <a href="{{item.link}}">
+          {{item.name}}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+
+  </div>
+</div>
